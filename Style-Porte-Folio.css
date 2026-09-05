@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #2b3a42;
+    --secondary-color: #3f5765;
+    --accent-color: #ff6b6b;
+    --bg-color: #f8f9fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header h2 {
+    color: #a3c2c2;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+nav {
+    margin-top: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+section {
+    padding: 3rem 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.competences-grid {
+    display: flex;
+    gap: 2rem;
+}
+
+.comp-categorie {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.comp-categorie h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+}
+
+.projet-carte {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.projet-carte h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.certification {
+    border-left: 4px solid var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .competences-grid {
+        flex-direction: column;
+    }
+}
